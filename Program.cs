@@ -1,6 +1,7 @@
 ﻿// зад 47 Устройство для заполнения массива вещественными числами
 Console.Clear();
 int m=new Random().Next(6,8);
+int n=new Random().Next(6,8);
 void PrintArray (double[,] array)
     {
         for (int i=0;i<array.GetLength(0);i++)
@@ -17,6 +18,6 @@ double [,] FillArray(double[,] array1)
                     array1[i1,j1]=new Random().Next(50)/10.0;
         return array1;
     }
-double[,] array3=new double [m,m];
+double[,] array3=new double [m,n];
 Console.WriteLine("Полученный массив");
 PrintArray(FillArray(array3));
